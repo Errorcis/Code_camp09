@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>index 3 cores of front-end html,css,js</title>
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <input id="in1" type="text" placeholder="Test Color">
+        <input id="in2" type="text" placeholder="Background Color">
+        <button onclick="changeColor()">Change Color</button>
+        <h2>Codecamp Thailand</h2>
+
+
+        
+
+      
+
+    <script> // แบบ Internal
+        // alert("hello")
+        function changeColor(){
+
+            let tcolor = document.querySelector('#in1').value
+            let bcolor = document.querySelector('#in2').value
+            
+            document.querySelector('h2').style.color = tcolor
+            document.querySelector('h2').style.backgroundColor = bcolor
+        }
+    </script>
+    </body>
+</html>
