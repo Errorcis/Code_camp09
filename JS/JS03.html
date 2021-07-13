@@ -12,10 +12,12 @@
         if (year === "2018"){
             alert("Very Good !!!!!")
             console.log("Very Good")
-        } else if (year === "2017" || year === "2019"){
+        } else if ( Number(year) < 2000  ){
             console.log("So very Near")
+            alert("Let try again!!!!")
         } else {
             console.log("Wrong")
+            alert("Near Correct")
         }
         alert("Good Bye")
     </script>
