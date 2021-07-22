@@ -13,12 +13,12 @@
             let uPass = prompt("Input your password: ")
             if (uPass === "#codecamp#5"){
                 alert("ยินดีต้อนรับ")
-            }else if(uPass === " "){
+            }else if(uPass === " " || uPass === null){
                 alert("ยกเลิก")
             }else{
-                alert("ฉันไม่รู้จักคุณ")
+                alert("Wrong password")
             }
-        }else if(uName === " "){
+        }else if(uName === " "  || uName === null){
             alert("ยกเลิก")
         }else{
             alert("ฉันไม่รู้จักคุณ")
