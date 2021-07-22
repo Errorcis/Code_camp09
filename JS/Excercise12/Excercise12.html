@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        let uName = prompt("Input your userName: ")
+        if (uName === "Admin"){
+            let uPass = prompt("Input your password: ")
+            if (uPass === "#codecamp#5"){
+                alert("ยินดีต้อนรับ")
+            }else if(uPass === " "){
+                alert("ยกเลิก")
+            }else{
+                alert("ฉันไม่รู้จักคุณ")
+            }
+        }else if(uName === " "){
+            alert("ยกเลิก")
+        }else{
+            alert("ฉันไม่รู้จักคุณ")
+        }
+    </script>
 </body>
 </html>
