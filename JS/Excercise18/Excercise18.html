@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Player1 = +prompt("ใส่ตัวเลขที่ต้องการจะให้เพื่อนคุณทาย")
+        while(Player1 < 1 || Player1 > 100){
+            alert("ให้ใส่ตัวเลขระหว่าง 1-100 เท่านั้น");
+            Player1 = +prompt("ใส่ตัวเลขของคุณอีกครั้ง")
+        }
+        let i = 10 ;
+        alert(`คุณมีโอกาส ${i} ครั้ง`);
+        let Player2 = +prompt("ทายตัวเลขของเพื่อนคุณ");
+        while(i > 0){
+            let result = (Player2 == Player1) ? "ถูกต้อง!!!!" : (Player2 > Player1) ? "มากเกินไป" : "น้อยเกินไป";
+            alert(result);
+            if(Player2 == Player1)break;
+            Player2 = +prompt(`โอกาสของคุณเหลือ ${i} ครั้ง`)
+            i--;
+        }
+        let end = (Player2 !== Player1)? "คุณแพ้แล้ว" : "ถูกต้อง!!!!";
+        alert(end);
+    </script>
+</body>
+</html>
