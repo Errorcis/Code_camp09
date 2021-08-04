@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function draw(n){
+            for(let row = 1; row < (n * 2) ; row++){
+                let result = "";
+                if(row < n){
+                    for(let columnA = 1 ; columnA <= n; columnA++){
+                    (columnA > row)? result = result + "-" : result = result + "*";
+                    }
+                }else if(row > n){
+                    for(let columnB = (n * 2); columnB > n; columnB--){
+                        (columnB <= row)? result = result + "-" : result = result + "*";
+                    }
+                }else{
+                    for (columnC = 0; columnC < n; columnC++){
+                        result = result + "*";
+                    }
+                }
+                console.log(result);
+            }
+        }            
+        draw(2);
+        console.log("n = 2");
+       
+        draw(3);
+        console.log("n = 3");
+        
+        draw(4);
+        console.log("n = 4");
+    </script>
+</body>
+</html>

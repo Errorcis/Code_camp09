@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function draw(n){
+            for(let row = 1; row <= n ; row++){
+                let result = "";
+                for(let column = 1 ; column <= n; column++){
+                    result = result + (column * row);
+                }
+                console.log(result);
+        }
+    }
+        draw(2);
+        console.log("n = 2");
+       
+        draw(3);
+        console.log("n = 3");
+        
+        draw(4);
+        console.log("n = 4");
+    </script>
+</body>
+</html>

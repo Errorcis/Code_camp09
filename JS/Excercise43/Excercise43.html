@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function draw(n){
+            for(let rowA= 0; rowA < (n-1) ; rowA++){
+                let result = "";
+                for(let columnA = 1 ; columnA < (n*2); columnA++){
+                  (columnA <= (n + rowA) && columnA >= (n - rowA)) ? result = result + "*" : result = result + "-"
+                }
+                console.log(result);
+            }
+            for(let rowB= 0; rowB < n ; rowB++){
+                let result = "";
+                for(let columnB = 1 ; columnB < (n*2); columnB++){
+                  (columnB <= rowB || (columnB + rowB) > (n*2 -1))? result = result + "-" : result = result + "*"
+                }
+                console.log(result);
+        }
+    }
+        draw(2);
+        console.log("n = 2");
+       
+        draw(3);
+        console.log("n = 3");
+        
+        draw(4);
+        console.log("n = 4");
+    </script>
+</body>
+</html>
