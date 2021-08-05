@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let evenOdd = function(num){
+            return(num % 2 === 0)? "Even" : "Odd";
+        }
+
+        let evenOdd2 = (num) => (num % 2 === 0)? "Even" : "Odd";
+
+        let evenOdd3 = num => (num % 2 === 0)? "Even" : "Odd";
+       
+        let double = n => n * 2;
+       
+        let sum = function(a,b){ //แบบปกติ
+            return a+b;
+        }
+
+        let sayHi = () => {
+            console.log("Hi");
+            alert("Hello")
+        }
+        let sum3 = (a,b) => a+b;
+
+        let sum2 = (a,b) => a+b; //แบบย่อ เปลี่ยนคำว่า function เป็น สัญลักษณ์ Arrow => 
+                                    //และ ละคำว่า return ไปใส่หลังarrowได้เลย
+
+        console.log(sum(2,3)); 
+        console.log(sum2(1,4));
+        console.log(sum3(3,2));
+        console.log(evenOdd(6));
+        console.log(evenOdd2(7));
+        console.log(evenOdd3(16));
+        console.log(double(50));   
+
+    </script>
+</body>
+</html>
